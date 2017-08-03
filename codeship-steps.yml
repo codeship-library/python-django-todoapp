@@ -1,8 +1,6 @@
-- type: parallel
-  steps:
-  - name: tests
-    service: web_codeship_example_python
-    command: bin/ci "python manage.py test"
+- name: tests
+  service: web_codeship_example_python
+  command: bin/ci "python manage.py test"
 - name: deploy
   tag: master
   service: codeship_heroku_deployment
