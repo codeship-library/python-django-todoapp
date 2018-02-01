@@ -12,7 +12,7 @@ services:
     environment:
       DATABASE_URL: postgres://todoapp@postgres/todos
   postgres:
-    image: postgres:9.6.2-alpine
+    image: healthcheck/postgres:alpine
     environment:
       POSTGRES_USER: todoapp
       POSTGRES_DB: todos
